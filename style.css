@@ -1,0 +1,40 @@
+
+
+.slider-container {
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   width: 800px;
+   height: 450px;
+}
+
+.slider {
+   display: flex;
+   transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+   width: 100%;
+   height: auto;
+}
+
+.slider-controls {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.slider-numbers {
+   position: absolute;
+   right: 20px;
+   z-index: 1;
+   font-size: 20px;
+   top: 20px;
+   color: #fff;
+}
+
+.prev-button:focus,
+.next-button:focus {
+   outline: none;
+}
